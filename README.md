@@ -1,3 +1,5 @@
+This is the repo for my personal website! I still have some code cleaning to do, but feel free to look around.
+
 ## Running
 
 ```bash

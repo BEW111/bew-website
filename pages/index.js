@@ -26,7 +26,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main>
-          <div class="h-screen w-screen scroll-smooth">
+          <div class="scroll-smooth">
             <Intro />
             <About />
             <Projects />
