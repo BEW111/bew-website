@@ -1,11 +1,12 @@
 import React, { useRef, useState } from "react";
 import { useLoader, useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { Mesh } from "three";
 
 const startRot = [0.05, (2 * Math.PI) / 3, 0.02];
 
 const GltfModel = ({ modelPath, scale = 40, position = [0, 0, 0] }) => {
-  const ref = useRef();
+  const ref = useRef<Mesh>();
   const gltf = useLoader(GLTFLoader, modelPath);
   const [hovered, hover] = useState(false);
 
