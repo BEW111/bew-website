@@ -83,11 +83,12 @@ export default function About() {
       <div className="pointer-events-none flex h-full w-full flex-col justify-center p-4 md:w-1/2">
         <br />
         <h1 className="pb-8 font-robotoMedium text-3xl text-rose-500 md:text-5xl lg:text-6xl">
-          I'm a computer science student focusing on data science and ML.
+          I&apos;m a computer science student focusing on data science and ML.
         </h1>
         <p className="text-md pb-12 font-robotoRegular text-rose-400 md:text-lg lg:text-2xl">
-          I also minor in Korean and engineering entrepreneurship. I'm a
-          sophomore at the University of Pennsylvania, where I'm involved with{" "}
+          I also minor in Korean and engineering entrepreneurship. I&apos;m a
+          sophomore at the University of Pennsylvania, where I&apos;m involved
+          with{" "}
           <a
             className="pointer-events-auto text-rose-500 hover:text-blue-400"
             href="https://analytics.wharton.upenn.edu/get-involved/students/student-analytics-fellows/"
@@ -114,10 +115,10 @@ export default function About() {
           >
             math-based comp sci class
           </a>
-          , and more. I've interned in data science and fullstack dev, but I'm
-          now pivoting more towards ML and deep learning. In my free time, I
-          enjoy cooking, reading, going on runs, and drinking as much club soda
-          as possible.
+          , and more. I&apos;ve interned in data science and fullstack dev, but
+          I&apos;m now pivoting more towards ML and deep learning. In my free
+          time, I enjoy cooking, reading, going on runs, and drinking as much
+          club soda as possible.
           <br />
           <br />I want to learn more about how to make safe and trustworthy ML
           models, as well as how we can use everyday data that humans produce to

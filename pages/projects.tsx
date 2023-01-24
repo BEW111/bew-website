@@ -21,7 +21,7 @@ export default function Projects() {
             </p>
             <br />
             <p className="font-robotoMedium text-lg text-blue-500 md:text-lg lg:text-xl">
-              Contact me if you're interested in joining the beta!
+              Contact me if you&apos;re interested in joining the beta!
             </p>
             <br />
             <p className="font-robotoMedium text-xl text-blue-400 md:text-2xl lg:text-2xl">
@@ -30,8 +30,8 @@ export default function Projects() {
               <br />
               {">"} Set smart reminders that adapt to how and when you work best
               <br />
-              {">"} Use social incentives like "superstreaks": shared habit
-              streaks that break if either you or your friend fails
+              {">"} Use social incentives like &quot;superstreaks&quot;: shared
+              habit streaks that break if either you or your friend fails
               <br />
               <br />
             </p>
