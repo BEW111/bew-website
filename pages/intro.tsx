@@ -1,6 +1,7 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import Scene from "../components/Scene";
+import { useSpring, animated } from "@react-spring/web";
 
 import {
   FaGithub,
@@ -15,6 +16,11 @@ const openInNewTab = (url) => {
 };
 
 export default function Intro() {
+  const springs = useSpring({
+    from: { y: -100 },
+    to: { y: 0 },
+  });
+
   return (
     <div className="relative flex h-screen w-full snap-center flex-col overflow-hidden sm:flex-row">
       <div className="relative h-full w-full">
@@ -23,7 +29,10 @@ export default function Intro() {
         </div>
       </div>
       {/* Name */}
-      <div className="pointer-events-none absolute flex h-full w-full items-center justify-center">
+      <animated.div
+        style={{ ...springs }}
+        className="pointer-events-none absolute flex h-full w-full items-center justify-center"
+      >
         <Parallax speed={8}>
           <div className="justify-content-center pointer-events-none -mt-24">
             <div className="flex">
@@ -46,7 +55,7 @@ export default function Intro() {
             </Parallax>
           </div>
         </Parallax>
-      </div>
+      </animated.div>
       {/* Nice to meet you */}
       <div className="absolute top-12 left-6">
         <Parallax speed={2}>

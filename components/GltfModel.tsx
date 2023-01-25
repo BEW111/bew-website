@@ -1,10 +1,8 @@
-// @ts-nocheck
-
 import React, { useRef, useState, useEffect } from "react";
 import { useLoader, useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh } from "three";
-import { useSpring, animated } from "@react-spring/three";
+import * as THREE from "three";
 
 import console from "console-suppress";
 console.warn.suppress(
@@ -18,8 +16,6 @@ const GltfModel = ({ modelPath, position = [0, 0, 0] }) => {
   const gltf = useLoader(GLTFLoader, modelPath);
 
   const [hovered, setHovered] = useState(false);
-  const { scale } = useSpring({ scale: hovered ? 0.4 : 0.38 });
-  const scaleRef = useRef(scale);
 
   // Subscribe this component to the render-loop, rotate the mesh every frame
   useFrame(({ clock }) => {
@@ -29,6 +25,10 @@ const GltfModel = ({ modelPath, position = [0, 0, 0] }) => {
       startRot[1] + Math.sin(clock.getElapsedTime()) * 0.1;
     ref.current.rotation.z =
       startRot[2] + Math.sin(clock.getElapsedTime()) * 0.1;
+    ref.current.scale.x =
+      ref.current.scale.y =
+      ref.current.scale.z =
+        THREE.MathUtils.lerp(ref.current.scale.z, hovered ? 0.4 : 0.38, 0.1);
   });
 
   useEffect(() => {
@@ -37,8 +37,7 @@ const GltfModel = ({ modelPath, position = [0, 0, 0] }) => {
 
   return (
     <>
-      <animated.primitive
-        scale={scaleRef.current.to((x) => [x, x, x])}
+      <primitive
         ref={ref}
         object={gltf.scene}
         position={position}
