@@ -33,7 +33,7 @@ const GltfModel = ({ modelPath, position = [0, 0, 0] }) => {
   return (
     <>
       <animated.primitive
-        scale={scaleRef}
+        scale={scaleRef.current.to((x) => [x, x, x])}
         ref={ref}
         object={gltf.scene}
         position={position}
