@@ -49,7 +49,7 @@ export default function Projects() {
               <span className="text-rose-500">transformers</span>
             </p>
           </div>
-          <div className="h-full px-8 pt-12 md:w-1/2">
+          <div className="h-full px-8 py-4 md:w-1/2">
             {/* <p className="font-robotoMedium text-2xl text-blue-500 md:text-3xl lg:text-5xl">
               XGAI: explainable solutions to generative models
             </p> */}

@@ -51,7 +51,7 @@ export default function About() {
             </p>
           </Parallax>
         </div>
-        <div className="absolute bottom-6 -right-10  md:-right-2 md:bottom-12">
+        <div className="absolute bottom-6 -right-10 md:-right-2 md:bottom-12">
           <Parallax speed={-5}>
             <div className="relative top-0 w-72 md:w-96">
               <ModelViewer modelPath={"/bew_can.glb"} />
@@ -64,12 +64,12 @@ export default function About() {
           <div className="absolute top-0 h-full w-10 "></div>
         </div>
       </div>
-      <div className="pointer-events-none flex h-screen w-full flex-col justify-center p-4 md:h-full md:w-1/2">
+      <div className="pointer-events-none flex h-screen w-full flex-col justify-center p-8 md:h-full md:w-1/2">
         <br />
         <h1 className="pb-8 font-robotoMedium text-3xl text-rose-500 md:text-5xl xl:text-6xl">
           I&apos;m a computer science student focusing on data science and ML.
         </h1>
-        <p className="text-md pb-12 font-robotoRegular text-rose-400 md:text-lg lg:text-xl xl:text-2xl">
+        <p className="pb-12 font-robotoRegular text-sm text-rose-400 md:text-lg lg:text-xl xl:text-2xl">
           I also minor in Korean and engineering entrepreneurship. I&apos;m a
           sophomore at the University of Pennsylvania, where I&apos;m involved
           with{" "}
