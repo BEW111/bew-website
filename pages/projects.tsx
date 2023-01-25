@@ -1,5 +1,8 @@
 import React from "react";
 import YoutubeEmbed from "../components/YoutubeEmbed";
+import Image from "next/image";
+
+import ChipIcon from "../public/chip_512x512_rounded.png";
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -10,15 +13,16 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="relative flex h-screen w-full snap-center flex-row overflow-hidden bg-rose-100"
+      className="flex w-full snap-center flex-row overflow-hidden bg-rose-100 md:h-screen"
     >
-      <div className="absolute h-full w-1/2 bg-rose-200"></div>
       <div className="absolute flex h-full w-full items-center justify-center">
-        <div className="flex h-5/6 w-11/12 bg-blue-100">
-          <div className="h-full w-1/2 px-8 pt-12">
-            <p className="font-robotoMedium text-2xl text-blue-500 md:text-3xl lg:text-5xl">
-              Chip: social media meets smart habit tracking
-            </p>
+        <div className="bg-blue-100 sm:w-11/12 md:flex md:h-5/6">
+          <div className="h-full px-8 pt-8 md:w-1/2 lg:pt-12">
+            <div className="flex flex-row">
+              <p className="font-robotoMedium text-2xl text-blue-500 md:text-3xl lg:text-5xl">
+                Chip: social media meets smart habit tracking
+              </p>
+            </div>
             <br />
             <p className="font-robotoMedium text-lg text-blue-500 md:text-lg lg:text-xl">
               Contact me if you&apos;re interested in joining the beta!
@@ -39,16 +43,25 @@ export default function Projects() {
               Built with <span className="text-rose-500">React Native</span> |{" "}
               <span className="text-rose-500">Vision Camera</span> |{" "}
               <span className="text-rose-500">Redux</span> |{" "}
+              <span className="text-rose-500">Notifee</span> |{" "}
               <span className="text-rose-500">Firebase</span> |{" "}
               <span className="text-rose-500">scikit-learn</span> |{" "}
               <span className="text-rose-500">transformers</span>
             </p>
           </div>
-          <div className="h-full w-1/2 px-8 pt-12">
+          <div className="h-full px-8 pt-12 md:w-1/2">
             {/* <p className="font-robotoMedium text-2xl text-blue-500 md:text-3xl lg:text-5xl">
               XGAI: explainable solutions to generative models
             </p> */}
             <YoutubeEmbed embedId="WGds-UYgeeo" />
+            {/* <div className="r-5 b-5 absolute">
+              <Image
+                alt="chip app icon"
+                src={ChipIcon}
+                width={64}
+                height={64}
+              />
+            </div> */}
           </div>
         </div>
       </div>

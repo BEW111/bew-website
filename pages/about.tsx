@@ -1,13 +1,9 @@
-import Head from "next/head";
 import Image from "next/image";
 
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
-import Scene from "../components/Scene";
 import Brian from "../public/brian.png";
-import Nutrition from "../public/brian_nutrition_facts.png";
 
-import { FaLightbulb } from "react-icons/fa";
 import ModelViewer from "../components/ModelViewer";
 
 const openInNewTab = (url) => {
@@ -21,8 +17,8 @@ export default function About() {
       id="about"
       className="relative w-full snap-center overflow-hidden bg-rose-100 md:flex md:h-screen md:flex-row"
     >
-      <div className="relative h-full w-full bg-rose-200 md:w-1/2">
-        <div className="pointer-events-none absolute flex h-full w-full">
+      <div className="relative h-screen w-full overflow-hidden bg-rose-200 md:relative md:h-full md:w-1/2">
+        <div className="pointer-events-none absolute hidden h-full w-full md:flex">
           <div className="absolute top-5 left-5 h-0.5 w-10 bg-rose-500" />
           <div className="absolute top-5 left-5 h-10 w-0.5 bg-rose-500" />
           <div className="absolute top-5 right-5 h-0.5 w-10 bg-rose-500" />
@@ -32,10 +28,10 @@ export default function About() {
           <div className="absolute bottom-5 right-5 h-0.5 w-10 bg-rose-500" />
           <div className="absolute bottom-5 right-5 h-10 w-0.5 bg-rose-500" />
         </div>
-        <Parallax speed={-2}>
-          <div className="absolute left-16 top-10">
+        <div className="absolute left-4 top-4 justify-center md:left-16 md:top-10">
+          <Parallax speed={-7}>
             <div
-              className="invisible border-4 border-rose-500 bg-white sm:visible"
+              className="border-4 border-rose-500 bg-white"
               style={{
                 width: 3024 / 12,
                 height: 4000 / 12,
@@ -50,42 +46,30 @@ export default function About() {
                 objectFit="cover"
               />
             </div>
-          </div>
-        </Parallax>
-        <Parallax speed={-4}>
-          <div
-            style={{ width: 336 / 1.3, height: 448 / 1.3 }}
-            className="absolute left-16 top-10"
-          >
-            <p className="invisible absolute -bottom-12 -right-8 font-robotoRegular text-3xl text-rose-500 md:visible md:text-4xl lg:text-5xl">
+            <p className="mt-4 ml-4 font-robotoRegular text-3xl text-rose-500 md:ml-0 md:text-center md:text-4xl lg:text-5xl">
               fig. 1: me
             </p>
-          </div>
-        </Parallax>
-        <div className="absolute top-36 right-4">
+          </Parallax>
+        </div>
+        <div className="absolute bottom-6 -right-10  md:-right-2 md:bottom-12">
           <Parallax speed={-5}>
-            <div className="w-96">
+            <div className="relative top-0 w-72 md:w-96">
               <ModelViewer modelPath={"/bew_can.glb"} />
+              <p className="-mt-24 text-center font-robotoRegular text-3xl text-rose-500 md:text-4xl lg:text-5xl">
+                fig. 2: stats
+              </p>
             </div>
           </Parallax>
-        </div>
-        <div
-          style={{ width: 580 / 2.5, height: 1070 / 2.5 }}
-          className="pointer-events-none absolute right-4 bottom-10"
-        >
-          <Parallax speed={-6}>
-            <p className="invisible absolute -top-20 -left-24 font-robotoRegular text-3xl text-rose-500 md:text-4xl lg:visible lg:text-5xl">
-              fig. 2: stats
-            </p>
-          </Parallax>
+          <div className="absolute top-0 h-36 w-72 "></div>
+          <div className="absolute top-0 h-full w-10 "></div>
         </div>
       </div>
-      <div className="pointer-events-none flex h-full w-full flex-col justify-center p-4 md:w-1/2">
+      <div className="pointer-events-none flex h-screen w-full flex-col justify-center p-4 md:h-full md:w-1/2">
         <br />
-        <h1 className="pb-8 font-robotoMedium text-3xl text-rose-500 md:text-5xl lg:text-6xl">
+        <h1 className="pb-8 font-robotoMedium text-3xl text-rose-500 md:text-5xl xl:text-6xl">
           I&apos;m a computer science student focusing on data science and ML.
         </h1>
-        <p className="text-md pb-12 font-robotoRegular text-rose-400 md:text-lg lg:text-2xl">
+        <p className="text-md pb-12 font-robotoRegular text-rose-400 md:text-lg lg:text-xl xl:text-2xl">
           I also minor in Korean and engineering entrepreneurship. I&apos;m a
           sophomore at the University of Pennsylvania, where I&apos;m involved
           with{" "}

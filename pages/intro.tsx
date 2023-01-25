@@ -34,7 +34,7 @@ export default function Intro() {
         className="pointer-events-none absolute flex h-full w-full items-center justify-center"
       >
         <Parallax speed={8}>
-          <div className="justify-content-center pointer-events-none -mt-24">
+          <div className="justify-content-center pointer-events-none -mt-12 ml-4 md:ml-0 md:-mt-24">
             <div className="flex">
               <h1 className="-mb-5 select-none font-robotoRegular text-6xl text-rose-500 md:-mb-12 md:text-8xl lg:text-9xl">
                 Brian
@@ -42,7 +42,7 @@ export default function Intro() {
               <Parallax speed={-4}>
                 <a
                   href="#about"
-                  className="pointer-events-auto mt-2 text-2xl text-rose-500 hover:text-blue-500 md:text-3xl lg:text-4xl"
+                  className="pointer-events-auto invisible mt-2 text-2xl text-rose-500 hover:text-blue-500 sm:visible md:text-3xl lg:text-4xl"
                 >
                   <FaQuestionCircle />
                 </a>
@@ -70,24 +70,7 @@ export default function Intro() {
       {/* Footer */}
       <div className="absolute bottom-8 w-full">
         <Parallax speed={2}>
-          <div className="px-8 pb-2">
-            <p className="text-justify font-robotoRegular text-xs text-rose-500">
-              {/* hey thanks for stopping by my website and nice to meet you, this
-              block of text is really just for aesthetic reasons but i figured i
-              could write something here so if you want an extra short totally
-              professional intro about me then here it is: im brian, i do data
-              science and machine learning stuff but i talk about that down
-              below so ill instead talk about how in middle school i wanted to
-              make video games so i taught myself java, but at the time i
-              actually thought i was gonna go into quantum physics, until i got
-              to the end of high school, started studying machine learning,
-              realized how much i liked it, and made the choice to switch over,
-              but anyway besides all the academic stuff i really enjoy going on
-              hikes, traveling, drinking unhealthy amounts of club soda, and
-              cooking new dishes */}
-            </p>
-          </div>
-          <div className="flex w-full items-center">
+          <div className="flex w-full items-center ">
             <div className="group ml-8 rounded-full border border-rose-500 px-5 py-1 hover:border-blue-500 ">
               <a
                 href="#projects"
@@ -96,8 +79,8 @@ export default function Intro() {
                 my projects
               </a>
             </div>
-            <hr className="border-0.5 ml-5 mr-5 flex-1 border-rose-500" />
-            <div className="mr-8 flex flex-row space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+            <hr className="border-0.5 ml-5 mr-5 flex-1 border-rose-500 sm:visible" />
+            <div className="mr-8 flex flex-row space-y-0 space-x-3 sm:space-x-4">
               <p
                 className="cursor-pointer text-3xl text-rose-500 hover:text-blue-500"
                 onClick={() => openInNewTab("https://github.com/BEW111")}

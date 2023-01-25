@@ -42,8 +42,12 @@ const GltfModel = ({ modelPath, position = [0, 0, 0] }) => {
         object={gltf.scene}
         position={position}
         rotation={startRot}
-        onPointerOver={() => setHovered(true)}
-        onPointerOut={() => setHovered(false)}
+        onPointerOver={() => {
+          setHovered(true);
+        }}
+        onPointerOut={() => {
+          setHovered(false);
+        }}
       />
     </>
   );

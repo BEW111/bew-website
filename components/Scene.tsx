@@ -6,13 +6,27 @@ import { Mesh } from "three";
 
 const vec = new THREE.Vector3();
 
-export default function App() {
+export default function Scene() {
+  const [width, setWidth] = useState<number>(200);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  const isMobile = width <= 768;
+
   return (
     <div className="w-full">
       <Canvas style={{ width: "100%" }}>
         <color attach="background" args={["black"]} />
         <pointLight position={[0, 0, 300]} intensity={0.4} />
-        <Box />
+        {!isMobile && <Box />}
         <AsciiRenderer
           fgColor="#F43F5E"
           bgColor="#FFFFFF00"
