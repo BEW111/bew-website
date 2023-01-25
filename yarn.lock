@@ -971,6 +971,11 @@ concat-map@0.0.1:
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
+console-suppress@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/console-suppress/-/console-suppress-0.1.1.tgz#3efe1e4ca0ce137b564dafd1c95711acc46d8041"
+  integrity sha512-xqFyMoGacVho4j1Jy8Ug3bZbsf+z/1zU2t91jsn3wKKTvGHEM2yvzICjOiXkcV2jNR0jKihcwXOZjcZwkk3R+g==
+
 core-js-pure@^3.25.1:
   version "3.25.5"
   resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.25.5.tgz"

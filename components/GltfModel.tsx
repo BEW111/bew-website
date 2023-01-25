@@ -6,6 +6,11 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh } from "three";
 import { useSpring, animated } from "@react-spring/three";
 
+import console from "console-suppress";
+console.warn.suppress(
+  "Cannot call the manual advancement of rafz whilst frameLoop is not set as demand"
+);
+
 const startRot = [0.05, Math.PI * 1.22, 0.02];
 
 const GltfModel = ({ modelPath, position = [0, 0, 0] }) => {

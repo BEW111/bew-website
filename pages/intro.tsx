@@ -9,19 +9,12 @@ import {
   FaQuestionCircle,
 } from "react-icons/fa";
 
-import { useSpring, animated } from "@react-spring/web";
-
 const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
   if (newWindow) newWindow.opener = null;
 };
 
 export default function Intro() {
-  const springs = useSpring({
-    from: { y: -100 },
-    to: { y: 0 },
-  });
-
   return (
     <div className="relative flex h-screen w-full snap-center flex-col overflow-hidden sm:flex-row">
       <div className="relative h-full w-full">
@@ -30,10 +23,7 @@ export default function Intro() {
         </div>
       </div>
       {/* Name */}
-      <animated.div
-        style={{ ...springs }}
-        className="pointer-events-none absolute flex h-full w-full items-center justify-center"
-      >
+      <div className="pointer-events-none absolute flex h-full w-full items-center justify-center">
         <Parallax speed={8}>
           <div className="justify-content-center pointer-events-none -mt-24">
             <div className="flex">
@@ -56,7 +46,7 @@ export default function Intro() {
             </Parallax>
           </div>
         </Parallax>
-      </animated.div>
+      </div>
       {/* Nice to meet you */}
       <div className="absolute top-12 left-6">
         <Parallax speed={2}>

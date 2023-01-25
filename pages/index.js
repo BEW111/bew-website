@@ -1,17 +1,17 @@
+import React from "react";
 import Head from "next/head";
-import Image from "next/image";
-
-import React, { useRef, useState, useEffect } from "react";
 
 import { ParallaxProvider } from "react-scroll-parallax";
-
-import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 import Intro from "../pages/intro.tsx";
 import About from "../pages/about.tsx";
 import Projects from "../pages/projects.tsx";
 
-import { Parallax } from "react-scroll-parallax";
+import { Globals } from "@react-spring/shared";
+
+Globals.assign({
+  frameLoop: "always",
+});
 
 export default function Home() {
   return (
