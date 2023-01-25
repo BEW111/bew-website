@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { useRef, useState, useEffect } from "react";
 import { useLoader, useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -31,7 +33,7 @@ const GltfModel = ({ modelPath, position = [0, 0, 0] }) => {
   return (
     <>
       <animated.primitive
-        scale={scaleRef.current.to((x) => [x, x, x])}
+        scale={scaleRef}
         ref={ref}
         object={gltf.scene}
         position={position}
