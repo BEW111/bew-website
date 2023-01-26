@@ -3,24 +3,11 @@ import { useRef, useState, useEffect, useMemo, useLayoutEffect } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { AsciiEffect } from "./effects/CustomAsciiEffect";
 import { Mesh } from "three";
+import { isMobile } from "react-device-detect";
 
 const vec = new THREE.Vector3();
 
 export default function Scene() {
-  const [width, setWidth] = useState<number>(200);
-
-  function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-  }
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
-
-  const isMobile = width <= 768;
-
   return (
     <div className="w-full">
       <Canvas style={{ width: "100%" }}>
