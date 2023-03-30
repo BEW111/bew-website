@@ -73,10 +73,10 @@ export default function Intro() {
           <div className="flex w-full items-center ">
             <div className="group ml-8 rounded-full border border-rose-500 px-5 py-1 hover:border-blue-500 ">
               <a
-                href="#projects"
+                href="https://drive.google.com/file/d/1Grzk1e23YxAXOOUsMo6iAlSkFlDKFzf0/view?usp=sharing"
                 className="font-robotoMedium text-xl text-rose-500 group-hover:text-blue-500"
               >
-                my projects
+                resume
               </a>
             </div>
             <hr className="border-0.5 ml-5 mr-5 flex-1 border-rose-500 sm:visible" />
