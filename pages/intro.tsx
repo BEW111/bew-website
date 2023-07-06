@@ -3,12 +3,7 @@ import { Parallax } from "react-scroll-parallax";
 import Scene from "../components/Scene";
 import { useSpring, animated } from "@react-spring/web";
 
-import {
-  FaGithub,
-  FaEnvelope,
-  FaLinkedin,
-  FaQuestionCircle,
-} from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -24,7 +19,7 @@ export default function Intro() {
   return (
     <div className="relative flex h-screen w-full snap-center flex-col overflow-hidden sm:flex-row">
       <div className="relative h-full w-full">
-        <div className="absolute flex h-full w-full bg-gradient-to-b from-blue-100 via-zinc-100 to-pink-100">
+        <div className="absolute flex h-full w-full bg-gradient-to-b from-blue-100 via-zinc-100 to-rose-100">
           <Scene />
         </div>
       </div>
@@ -39,14 +34,6 @@ export default function Intro() {
               <h1 className="-mb-5 select-none font-robotoRegular text-6xl text-rose-500 md:-mb-12 md:text-8xl lg:text-9xl">
                 Brian
               </h1>
-              <Parallax speed={-4}>
-                <a
-                  href="#about"
-                  className="pointer-events-auto invisible mt-2 text-2xl text-rose-500 hover:text-blue-500 sm:visible md:text-3xl lg:text-4xl"
-                >
-                  <FaQuestionCircle />
-                </a>
-              </Parallax>
             </div>
             <Parallax speed={-1}>
               <h1 className="ml-5 -rotate-6 select-none font-luthonSouthardScript text-6xl text-rose-500 md:text-8xl lg:text-9xl">
@@ -73,8 +60,10 @@ export default function Intro() {
           <div className="flex w-full items-center ">
             <div className="group ml-8 rounded-full border border-rose-500 px-5 py-1 hover:border-blue-500 ">
               <a
-                href="https://drive.google.com/file/d/1Grzk1e23YxAXOOUsMo6iAlSkFlDKFzf0/view?usp=sharing"
+                target="_blank"
+                href="https://drive.google.com/file/d/1SY2nfnevOOV246zamHXgb9F5BDkAOD_Z/view?usp=drive_link"
                 className="font-robotoMedium text-xl text-rose-500 group-hover:text-blue-500"
+                rel="noreferrer"
               >
                 resume
               </a>
