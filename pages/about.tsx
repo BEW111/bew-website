@@ -71,8 +71,8 @@ export default function About() {
         </h1>
         <p className="pb-12 font-robotoRegular text-sm text-rose-400 md:text-lg lg:text-xl xl:text-2xl">
           I also minor in Korean and engineering entrepreneurship. I&apos;m a
-          sophomore at the University of Pennsylvania, where I&apos;m involved
-          with{" "}
+          rising junior at the University of Pennsylvania, where I&apos;m
+          involved with{" "}
           <a
             className="pointer-events-auto text-rose-500 hover:text-blue-400"
             href="https://analytics.wharton.upenn.edu/get-involved/students/student-analytics-fellows/"
@@ -101,8 +101,8 @@ export default function About() {
           </a>
           , and more. I&apos;ve interned in data science and fullstack dev, but
           I&apos;m now pivoting more towards ML and deep learning. In my free
-          time, I enjoy cooking, reading, going on runs, and drinking as much
-          club soda as possible.
+          time, you&apos;ll can catch me cooking, building apps, or traveling to
+          new places.
           <br />
           <br />I want to learn more about how to make safe and trustworthy ML
           models, as well as how we can use everyday data that humans produce to
