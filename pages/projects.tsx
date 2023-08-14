@@ -1,5 +1,4 @@
 import React from "react";
-import YoutubeEmbed from "../components/YoutubeEmbed";
 import Image from "next/image";
 
 import ChipIcon from "../public/projects/chip_512x512_rounded.png";
