@@ -61,7 +61,7 @@ export default function Intro() {
             <div className="group ml-8 rounded-full border border-rose-500 px-5 py-1 hover:border-blue-500 ">
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1SY2nfnevOOV246zamHXgb9F5BDkAOD_Z/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1UHbyTFKgkl8p5reakigyfvYeWfyRD9As/view?usp=sharing"
                 className="font-robotoMedium text-xl text-rose-500 group-hover:text-blue-500"
                 rel="noreferrer"
               >

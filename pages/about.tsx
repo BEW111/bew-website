@@ -15,23 +15,19 @@ export default function About() {
   return (
     <div
       id="about"
-      className="relative w-full snap-center overflow-hidden bg-rose-100 md:flex md:h-screen md:flex-row"
+      className="relative w-full snap-center overflow-hidden md:flex md:h-screen md:flex-row"
     >
-      <div className="relative h-screen w-full overflow-hidden bg-rose-200 md:relative md:h-full md:w-1/2">
+      <div className="relative h-screen w-full overflow-hidden border-b-2 border-rose-400 bg-rose-200 md:relative md:h-full md:w-1/2 md:rounded-br-3xl md:border-r-2">
         <div className="pointer-events-none absolute hidden h-full w-full md:flex">
-          <div className="absolute top-5 left-5 h-0.5 w-10 bg-rose-500" />
-          <div className="absolute top-5 left-5 h-10 w-0.5 bg-rose-500" />
           <div className="absolute top-5 right-5 h-0.5 w-10 bg-rose-500" />
           <div className="absolute top-5 right-5 h-10 w-0.5 bg-rose-500" />
           <div className="absolute bottom-5 left-5 h-0.5 w-10 bg-rose-500" />
           <div className="absolute bottom-5 left-5 h-10 w-0.5 bg-rose-500" />
-          <div className="absolute bottom-5 right-5 h-0.5 w-10 bg-rose-500" />
-          <div className="absolute bottom-5 right-5 h-10 w-0.5 bg-rose-500" />
         </div>
         <div className="absolute left-4 top-4 justify-center md:left-16 md:top-10">
           <Parallax speed={-7}>
             <div
-              className="border-4 border-rose-500 bg-white"
+              className="overflow-hidden rounded-xl border-2 border-rose-500 bg-white"
               style={{
                 width: 3024 / 12,
                 height: 4000 / 12,

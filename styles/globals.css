@@ -19,14 +19,35 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: black;
-    background: rgb(179, 189, 199);
-  }
+html {
+  color-scheme: light;
+}
+body {
+  background-color: #fee2e2;
+  opacity: 1;
+  background-image: linear-gradient(
+      #fecaca 1.2000000000000002px,
+      transparent 1.2000000000000002px
+    ),
+    linear-gradient(
+      90deg,
+      #fecaca 1.2000000000000002px,
+      transparent 1.2000000000000002px
+    ),
+    linear-gradient(
+      #fecaca 0.6000000000000001px,
+      transparent 0.6000000000000001px
+    ),
+    linear-gradient(
+      90deg,
+      #fecaca 0.6000000000000001px,
+      #fee2e2 0.6000000000000001px
+    );
+  background-size: 30px 30px, 30px 30px, 6px 6px, 6px 6px;
+  background-position: -1.2000000000000002px -1.2000000000000002px,
+    -1.2000000000000002px -1.2000000000000002px,
+    -0.6000000000000001px -0.6000000000000001px,
+    -0.6000000000000001px -0.6000000000000001px;
 }
 
 @font-face {
