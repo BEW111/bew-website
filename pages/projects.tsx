@@ -118,8 +118,8 @@ export default function Projects() {
               >
                 Check out the website here.
               </a>{" "}
-              At UC Berkeley's 2023 LLM-themed hackathon, my friend Aagam and I
-              built a website called PaperRabbit to help you organize your
+              At UC Berkeley&apos;s 2023 LLM-themed hackathon, my friend Aagam
+              and I built a website called PaperRabbit to help you organize your
               research paper reading lists.
             </p>
             <p className="text-md mt-4 font-robotoLight text-lg text-blue-400">
