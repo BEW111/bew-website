@@ -19,10 +19,10 @@ export default function About() {
     >
       <div className="relative h-screen w-full overflow-hidden border-b-2 border-rose-400 bg-rose-200 md:relative md:h-full md:w-1/2 md:rounded-br-3xl md:border-r-2">
         <div className="pointer-events-none absolute hidden h-full w-full md:flex">
-          <div className="absolute top-5 right-5 h-0.5 w-10 bg-rose-500" />
-          <div className="absolute top-5 right-5 h-10 w-0.5 bg-rose-500" />
-          <div className="absolute bottom-5 left-5 h-0.5 w-10 bg-rose-500" />
-          <div className="absolute bottom-5 left-5 h-10 w-0.5 bg-rose-500" />
+          <div className="absolute top-5 right-5 h-0.5 w-10 bg-rose-400" />
+          <div className="absolute top-5 right-5 h-10 w-0.5 bg-rose-400" />
+          <div className="absolute bottom-5 left-5 h-0.5 w-10 bg-rose-400" />
+          <div className="absolute bottom-5 left-5 h-10 w-0.5 bg-rose-400" />
         </div>
         <div className="absolute left-4 top-4 justify-center md:left-16 md:top-10">
           <Parallax speed={-7}>
@@ -42,7 +42,7 @@ export default function About() {
                 objectFit="cover"
               />
             </div>
-            <p className="mt-4 ml-4 font-robotoRegular text-3xl text-rose-500 md:ml-0 md:text-center md:text-4xl lg:text-5xl">
+            <p className="mt-4 ml-4 font-robotoRegular text-2xl text-rose-500 md:ml-0 md:text-center md:text-3xl lg:text-4xl">
               fig. 1: me
             </p>
           </Parallax>
@@ -51,7 +51,7 @@ export default function About() {
           <Parallax speed={-5}>
             <div className="relative top-0 w-72 md:w-96">
               <ModelViewer modelPath={"/bew_can.glb"} />
-              <p className="-mt-24 text-center font-robotoRegular text-3xl text-rose-500 md:text-4xl lg:text-5xl">
+              <p className="-mt-24 text-center font-robotoRegular text-2xl text-rose-500 md:text-3xl lg:text-4xl">
                 fig. 2: stats
               </p>
             </div>
