@@ -49,11 +49,11 @@ export default function Projects() {
               <p className="mb-4 font-robotoRegular text-sm text-blue-400 md:text-lg">
                 <a
                   className="pointer-events-auto font-robotoMedium text-blue-600 hover:text-rose-500"
-                  href="https://testflight.apple.com/join/MxBp9iWh"
+                  href="https://apps.apple.com/us/app/chip-build-goals-together/id6443741171"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Download the iOS beta for free, here.
+                  Download for iOS on the App Store for free, here.
                 </a>{" "}
                 I created a social media platform using React Native and
                 Supabase, designed around the social aspect of habits and goals.
